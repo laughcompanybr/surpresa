@@ -38,13 +38,55 @@ Um mês pode parecer pouco. Mas cada segundo com você já vale uma vida inteira
 Eu escolheria você em qualquer linha do tempo. Feliz 1 mês, meu amor.`;
 
 const GALLERY: PhotoSlot[] = [
-  { id: "g1", src: "/images/primeiraconversa.jpg", date: "15 · 01 · 2026", caption: "Primeira conversa", emoji: "💬" },
-  { id: "g2", src: "/images/primeiroencontro.jpg", date: "25 · 04 · 2026", caption: "Primeiro encontro", emoji: "🌅" },
-  { id: "g3", src: "/images/primeiraveznacasadela.jpg", date: "23 · 05 · 2026", caption: "Primeira vez na casa dela", emoji: "🏡" },
-  { id: "g4", src: "/images/algumashorasantesdopedidodenamoro.jpg", date: "06 · 06 · 2026", caption: "Algumas horas antes do pedido", emoji: "🌹" },
-  { id: "g5", src: "/images/eladissesimnopedidodenamoro.jpg", date: "06 · 06 · 2026", caption: "Ela disse sim", emoji: "❤️" },
-  { id: "g6", src: "/images/aliancas.jpg", date: "06 · 06 · 2026", caption: "Nossas alianças", emoji: "💍" },
-  { id: "g7", src: "/images/fotofossanossa.jpg", date: "sempre", caption: "A nossa foto", emoji: "✨" },
+  {
+    id: "g1",
+    src: "/images/primeiraconversa.jpg",
+    date: "15 · 01 · 2026",
+    caption: "Primeira conversa",
+    emoji: "💬",
+  },
+  {
+    id: "g2",
+    src: "/images/primeiroencontro.jpg",
+    date: "25 · 04 · 2026",
+    caption: "Primeiro encontro",
+    emoji: "🌅",
+  },
+  {
+    id: "g3",
+    src: "/images/primeiraveznacasadela.jpg",
+    date: "23 · 05 · 2026",
+    caption: "Primeira vez na casa dela",
+    emoji: "🏡",
+  },
+  {
+    id: "g4",
+    src: "/images/algumashorasantesdopedidodenamoro.jpg",
+    date: "06 · 06 · 2026",
+    caption: "Algumas horas antes do pedido",
+    emoji: "🌹",
+  },
+  {
+    id: "g5",
+    src: "/images/eladissesimnopedidodenamoro.jpg",
+    date: "06 · 06 · 2026",
+    caption: "Ela disse sim",
+    emoji: "❤️",
+  },
+  {
+    id: "g6",
+    src: "/images/aliancas.jpg",
+    date: "06 · 06 · 2026",
+    caption: "Nossas alianças",
+    emoji: "💍",
+  },
+  {
+    id: "g7",
+    src: "/images/fotofossanossa.jpg",
+    date: "sempre",
+    caption: "A nossa foto",
+    emoji: "✨",
+  },
 ];
 
 function Index() {
@@ -208,12 +250,11 @@ function Counters() {
   );
 }
 
-/* ---------------- Timeline ---------------- */
-
 function Timeline() {
   return (
     <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
+
         <SectionHeader
           chapter="03"
           eyebrow="Nossa história"
@@ -230,14 +271,6 @@ function Timeline() {
             image={
               <div className="space-y-8">
                 <ChatSim />
-                <div className="max-w-xs mx-auto text-center space-y-2 text-lavender/70 text-sm">
-                  <p>Até hoje a gente ri disso.</p>
-                  <p>Eu não comecei como todo mundo começaria.</p>
-                  <p>E, de alguma forma… deu certo.</p>
-                  <p className="italic text-lavender/50 pt-2 text-xs">
-                    ⚠️ Método sem garantia de repetição.
-                  </p>
-                </div>
               </div>
             }
             text={
@@ -258,8 +291,7 @@ function Timeline() {
                 </div>
 
                 <p className="text-lavender/80 leading-relaxed">
-                  Foi aqui que tudo começou de verdade. Um simples print que hoje significa uma das
-                  coisas mais importantes da minha vida.
+                  Foi aqui que tudo começou de verdade.
                 </p>
               </div>
             }
@@ -271,26 +303,18 @@ function Timeline() {
             date="25 · 04 · 2026"
             title="Nosso primeiro encontro"
             image={
-              <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame
-                  slot={{
-                    id: "encontro",
-                    src: "/images/primeiroencontro.jpg",
-                    date: "25/04/2026",
-                    caption: "Primeiro encontro",
-                    emoji: "🌅"
-                  }}
-                />
-              </div>
+              <PhotoFrame
+                slot={{
+                  id: "encontro",
+                  src: "/images/primeiroencontro.jpg",
+                  date: "25/04/2026",
+                  caption: "Primeiro encontro",
+                  emoji: "🌅"
+                }}
+              />
             }
             text={
-              <div className="space-y-5 text-base md:text-lg text-lavender/85 leading-relaxed">
-                <p>Foi o nosso primeiro encontro.</p>
-                <p>E também o dia da nossa primeira foto juntos.</p>
-                <p className="font-display italic text-2xl md:text-3xl text-lavender pt-2">
-                  O dia em que você virou real.
-                </p>
-              </div>
+              <p>Foi o nosso primeiro encontro.</p>
             }
           />
 
@@ -301,26 +325,18 @@ function Timeline() {
             date="23 · 05 · 2026"
             title="Um dos dias mais importantes"
             image={
-              <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame
-                  slot={{
-                    id: "casa",
-                    src: "/images/primeiraveznacasadela.jpg",
-                    date: "23/05/2026",
-                    caption: "Primeira vez na casa dela",
-                    emoji: "🏡"
-                  }}
-                />
-              </div>
+              <PhotoFrame
+                slot={{
+                  id: "casa",
+                  src: "/images/primeiraveznacasadela.jpg",
+                  date: "23/05/2026",
+                  caption: "Primeira vez na casa dela",
+                  emoji: "🏡"
+                }}
+              />
             }
             text={
-              <div className="space-y-5 text-base md:text-lg text-lavender/85 leading-relaxed">
-                <p>Nesse dia eu conheci os pais dela.</p>
-                <p>E também foi o dia do nosso primeiro beijo.</p>
-                <p className="font-display italic text-2xl md:text-3xl text-lavender pt-2">
-                  Um dos dias mais importantes da minha vida.
-                </p>
-              </div>
+              <p>Conheci os pais dela e mudou tudo.</p>
             }
           />
 
@@ -337,102 +353,26 @@ function Timeline() {
             date="06 · 07 · 2026"
             title="1 mês de nós"
             image={
-              <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame
-                  slot={{
-                    id: "ummes",
-                    src: "/images/aliancas.jpg",
-                    date: "06/07/2026",
-                    caption: "As nossas alianças",
-                    emoji: "💍"
-                  }}
-                />
-              </div>
+              <PhotoFrame
+                slot={{
+                  id: "ummes",
+                  src: "/images/aliancas.jpg",
+                  date: "06/07/2026",
+                  caption: "As nossas alianças",
+                  emoji: "💍"
+                }}
+              />
             }
             text={
-              <div className="space-y-5 text-base md:text-lg text-lavender/85 leading-relaxed">
-                <p>Um mês pode parecer pouco pra muita gente.</p>
-                <p className="font-display italic text-2xl md:text-3xl text-lavender pt-2">
-                  Mas pra mim já é uma vida inteira de memórias com ela.
-                </p>
-              </div>
+              <p>
+                Um mês já significa muito mais do que parece.
+              </p>
             }
           />
 
         </div>
       </div>
     </section>
-  );
-}
-
-function ChapterSpread({
-  number, date, title, image, text, reverse,
-}: {
-  number: string; date: string; title: string;
-  image: React.ReactNode; text: React.ReactNode; reverse?: boolean;
-}) {
-  return (
-    <motion.article
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      className="grid md:grid-cols-12 gap-10 md:gap-16 items-center"
-    >
-      <div className={`md:col-span-6 ${reverse ? "md:order-2" : ""}`}>{image}</div>
-      <div className={`md:col-span-6 ${reverse ? "md:order-1" : ""}`}>
-        <div className="flex items-baseline gap-6 mb-4">
-          <span className="font-display text-6xl md:text-7xl text-rose leading-none">{number}</span>
-          <span className="h-px flex-1 bg-rose" />
-        </div>
-        <p className="eyebrow">{date}</p>
-        <h3 className="font-display text-4xl md:text-5xl mt-3 mb-8 leading-[0.95]">{title}</h3>
-        {text}
-      </div>
-    </motion.article>
-  );
-}
-
-function FeatureChapter({ number, date, title }: { number: string; date: string; title: string }) {
-  return (
-    <motion.article
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 1.1, ease: "easeOut" }}
-      className="relative paper py-16 md:py-28 px-6 md:px-16 text-center soft-shadow overflow-hidden"
-    >
-      <div className="absolute top-4 left-4 md:top-6 md:left-6 w-10 h-10 md:w-14 md:h-14 border-t border-l border-rose" />
-      <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-10 h-10 md:w-14 md:h-14 border-b border-r border-rose" />
-      <div className="absolute -top-6 -right-4 md:-top-10 md:-right-10 font-display text-[9rem] md:text-[16rem] leading-none text-rose/25 select-none pointer-events-none">
-        {number}
-      </div>
-
-      <p className="eyebrow relative">{date}</p>
-      <h3 className="mt-6 font-display text-4xl md:text-7xl leading-[0.95] relative">
-        {title}
-      </h3>
-
-      <div className="rule-short mx-auto my-10 relative" />
-      <p className="max-w-2xl mx-auto font-display italic text-2xl md:text-3xl leading-relaxed text-lavender relative">
-        Esse foi o dia em que tudo deixou de ser só sentimento.
-      </p>
-      <p className="mt-4 max-w-xl mx-auto text-lavender/70 relative">
-        Ela deixou de ser apenas alguém especial pra mim — e virou oficialmente
-        <span className="text-ampersand"> minha namorada.</span>
-      </p>
-
-      <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-3xl mx-auto relative">
-        <div>
-          <PhotoFrame slot={{ id: "antes", src: algumashorasantesdopedidodenamoro.jpg, date: "06/06/2026", caption: "Algumas horas antes", emoji: "🌹" }} />
-          <p className="eyebrow mt-4">Antes · o buquê</p>
-        </div>
-        <div>
-          <PhotoFrame slot={{ id: "sim", src: eladissesimnopedidodenamoro.jpg, date: "06/06/2026", caption: "Ela disse sim", emoji: "❤️" }} />
-          <p className="eyebrow mt-4">Depois · o sim</p>
-        </div>
-      </div>
-    </motion.article>
   );
 }
 
