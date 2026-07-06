@@ -38,13 +38,13 @@ Um mês pode parecer pouco. Mas cada segundo com você já vale uma vida inteira
 Eu escolheria você em qualquer linha do tempo. Feliz 1 mês, meu amor.`;
 
 const GALLERY: PhotoSlot[] = [
-  { id: "g1", src: primeiraConversa.url, date: "15 · 01 · 2026", caption: "Primeira conversa", emoji: "💬" },
-  { id: "g2", src: primeiroEncontro.url, date: "25 · 04 · 2026", caption: "Primeiro encontro", emoji: "🌅" },
-  { id: "g3", src: primeiraVezCasa.url, date: "23 · 05 · 2026", caption: "Primeira vez na casa dela", emoji: "🏡" },
-  { id: "g4", src: antesPedido.url, date: "06 · 06 · 2026", caption: "Algumas horas antes do pedido", emoji: "🌹" },
-  { id: "g5", src: elaDisseSim.url, date: "06 · 06 · 2026", caption: "Ela disse sim", emoji: "❤️" },
-  { id: "g6", src: aliancas.url, date: "06 · 06 · 2026", caption: "Nossas alianças", emoji: "💍" },
-  { id: "g7", src: fotoFossaNossa.url, date: "sempre", caption: "A nossa foto", emoji: "✨" },
+  { id: "g1", src: primeiraconversa.jpg, date: "15 · 01 · 2026", caption: "Primeira conversa", emoji: "💬" },
+  { id: "g2", src: primeiroencontro.jpg, date: "25 · 04 · 2026", caption: "Primeiro encontro", emoji: "🌅" },
+  { id: "g3", src: primeiraveznacasadela.jpg, date: "23 · 05 · 2026", caption: "Primeira vez na casa dela", emoji: "🏡" },
+  { id: "g4", src: algumashorasantesdopedidodenamoro.jpg, date: "06 · 06 · 2026", caption: "Algumas horas antes do pedido", emoji: "🌹" },
+  { id: "g5", src: eladissesimnopedidodenamoro.jpg, date: "06 · 06 · 2026", caption: "Ela disse sim", emoji: "❤️" },
+  { id: "g6", src: aliancas.jpg, date: "06 · 06 · 2026", caption: "Nossas alianças", emoji: "💍" },
+  { id: "g7", src: fotofossanossa.jpg, date: "sempre", caption: "A nossa foto", emoji: "✨" },
 ];
 
 function Index() {
@@ -239,7 +239,7 @@ function Timeline() {
                 <p className="eyebrow">Primeiro print</p>
                 <div className="max-w-[240px] mx-auto md:mx-0">
                   <PhotoFrame
-                    slot={{ id: "print", src: primeiraConversa.url, date: "15/01/2026", caption: "Primeira conversa", emoji: "💬" }}
+                    slot={{ id: "print", src: primeiraconversa.jpg, date: "15/01/2026", caption: "Primeira conversa", emoji: "💬" }}
                     aspect="aspect-[9/16]"
                   />
                 </div>
@@ -257,7 +257,7 @@ function Timeline() {
             title="Nosso primeiro encontro"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "encontro", src: primeiroEncontro.url, date: "25/04/2026", caption: "Primeiro encontro", emoji: "🌅" }} />
+                <PhotoFrame slot={{ id: "encontro", src: primeiroencontro.jpg, date: "25/04/2026", caption: "Primeiro encontro", emoji: "🌅" }} />
               </div>
             }
             text={
@@ -279,7 +279,7 @@ function Timeline() {
             title="Um dos dias mais importantes"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "casa", src: primeiraVezCasa.url, date: "23/05/2026", caption: "Primeira vez na casa dela", emoji: "🏡" }} />
+                <PhotoFrame slot={{ id: "casa", src: primeiraveznacasadela.jpg, date: "23/05/2026", caption: "Primeira vez na casa dela", emoji: "🏡" }} />
               </div>
             }
             text={
@@ -305,7 +305,7 @@ function Timeline() {
             title="1 mês de nós"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "ummes", src: aliancas.url, date: "06/07/2026", caption: "As nossas alianças", emoji: "💍" }} />
+                <PhotoFrame slot={{ id: "ummes", src: aliancas.jpg, date: "06/07/2026", caption: "As nossas alianças", emoji: "💍" }} />
               </div>
             }
             text={
@@ -383,11 +383,11 @@ function FeatureChapter({ number, date, title }: { number: string; date: string;
 
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-3xl mx-auto relative">
         <div>
-          <PhotoFrame slot={{ id: "antes", src: antesPedido.url, date: "06/06/2026", caption: "Algumas horas antes", emoji: "🌹" }} />
+          <PhotoFrame slot={{ id: "antes", src: algumashorasantesdopedidodenamoro.jpg, date: "06/06/2026", caption: "Algumas horas antes", emoji: "🌹" }} />
           <p className="eyebrow mt-4">Antes · o buquê</p>
         </div>
         <div>
-          <PhotoFrame slot={{ id: "sim", src: elaDisseSim.url, date: "06/06/2026", caption: "Ela disse sim", emoji: "❤️" }} />
+          <PhotoFrame slot={{ id: "sim", src: eladissesimnopedidodenamoro.jpg, date: "06/06/2026", caption: "Ela disse sim", emoji: "❤️" }} />
           <p className="eyebrow mt-4">Depois · o sim</p>
         </div>
       </div>
