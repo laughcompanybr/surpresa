@@ -1,0 +1,157 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-blush: var(--blush);
+  --color-lavender: var(--lavender);
+  --color-rose: var(--rose);
+  --color-ivory: var(--ivory);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-hand: var(--font-hand);
+}
+
+:root {
+  --radius: 0.25rem;
+
+  --blush: #f8e8ee;
+  --rose: #e8c5d0;
+  --lavender-soft: #c9a0dc;
+  --lavender: #9b72cf;
+  --ivory: #fdf9f6;
+
+  --background: var(--blush);
+  --foreground: var(--lavender);
+
+  --card: var(--ivory);
+  --card-foreground: var(--lavender);
+  --popover: var(--ivory);
+  --popover-foreground: var(--lavender);
+
+  --primary: var(--lavender);
+  --primary-foreground: var(--ivory);
+
+  --secondary: var(--rose);
+  --secondary-foreground: var(--lavender);
+
+  --muted: color-mix(in oklab, var(--blush) 80%, white);
+  --muted-foreground: color-mix(in oklab, var(--lavender) 55%, white);
+
+  --accent: var(--rose);
+  --accent-foreground: var(--lavender);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: var(--ivory);
+
+  --border: color-mix(in oklab, var(--rose) 60%, transparent);
+  --input: var(--rose);
+  --ring: var(--lavender);
+
+  --font-display: "Abril Fatface", ui-serif, Georgia, serif;
+  --font-body: "Cabin", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Dancing Script", "Segoe Script", cursive;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html, body {
+    background: var(--blush);
+    color: var(--lavender);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--lavender);
+    letter-spacing: -0.005em;
+    line-height: 0.95;
+  }
+  ::selection {
+    background: var(--lavender-soft);
+    color: white;
+  }
+}
+
+/* editorial primitives */
+@utility eyebrow {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: color-mix(in oklab, var(--lavender) 85%, transparent);
+}
+@utility hairline {
+  height: 1px;
+  background: var(--rose);
+}
+@utility rule-short {
+  width: 4rem;
+  height: 1px;
+  background: var(--lavender);
+  opacity: 0.4;
+}
+@utility text-ampersand {
+  color: var(--rose);
+}
+@utility paper {
+  background: var(--ivory);
+  border: 1px solid color-mix(in oklab, var(--rose) 70%, transparent);
+}
+@utility corner-frame {
+  position: relative;
+}
+@utility soft-shadow {
+  box-shadow: 0 30px 80px -40px color-mix(in oklab, var(--lavender) 45%, transparent);
+}
+
+@keyframes float-heart {
+  0% { transform: translateY(105vh) scale(0.6); opacity: 0; }
+  15% { opacity: 0.5; }
+  85% { opacity: 0.5; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(6px, -8px); }
+}
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.06); opacity: 0.9; }
+}
+
+.heart-beat { animation: soft-pulse 1.8s ease-in-out infinite; }
