@@ -13,7 +13,7 @@ import primeiroEncontro from "@/assets/primeiroencontro.jpg";
 import primeiraVezCasa from "@/assets/primeiraveznacasadela.jpg";
 import antesPedido from "@/assets/algumashorasantesdopedidodenamoro.jpg";
 import elaDisseSim from "@/assets/eladissesimnopedidodenamoro.jpg";
-import aliancas from "@/assets/fotodasnossasaliancasnamao.jpg";
+import aliancas from "@/assets/aliancas.jpg";
 import fotoFossaNossa from "@/assets/fotofossanossa.jpg";
 
 export const Route = createFileRoute("/")({
