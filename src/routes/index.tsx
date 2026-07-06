@@ -38,13 +38,13 @@ Um mês pode parecer pouco. Mas cada segundo com você já vale uma vida inteira
 Eu escolheria você em qualquer linha do tempo. Feliz 1 mês, meu amor.`;
 
 const GALLERY: PhotoSlot[] = [
-  { id: "g1", src: primeiraconversa.jpg, date: "15 · 01 · 2026", caption: "Primeira conversa", emoji: "💬" },
-  { id: "g2", src: primeiroencontro.jpg, date: "25 · 04 · 2026", caption: "Primeiro encontro", emoji: "🌅" },
-  { id: "g3", src: primeiraveznacasadela.jpg, date: "23 · 05 · 2026", caption: "Primeira vez na casa dela", emoji: "🏡" },
-  { id: "g4", src: algumashorasantesdopedidodenamoro.jpg, date: "06 · 06 · 2026", caption: "Algumas horas antes do pedido", emoji: "🌹" },
-  { id: "g5", src: eladissesimnopedidodenamoro.jpg, date: "06 · 06 · 2026", caption: "Ela disse sim", emoji: "❤️" },
-  { id: "g6", src: aliancas.jpg, date: "06 · 06 · 2026", caption: "Nossas alianças", emoji: "💍" },
-  { id: "g7", src: fotofossanossa.jpg, date: "sempre", caption: "A nossa foto", emoji: "✨" },
+  { id: "g1", src: "/images/primeiraconversa.jpg", date: "15 · 01 · 2026", caption: "Primeira conversa", emoji: "💬" },
+  { id: "g2", src: "/images/primeiroencontro.jpg", date: "25 · 04 · 2026", caption: "Primeiro encontro", emoji: "🌅" },
+  { id: "g3", src: "/images/primeiraveznacasadela.jpg", date: "23 · 05 · 2026", caption: "Primeira vez na casa dela", emoji: "🏡" },
+  { id: "g4", src: "/images/algumashorasantesdopedidodenamoro.jpg", date: "06 · 06 · 2026", caption: "Algumas horas antes do pedido", emoji: "🌹" },
+  { id: "g5", src: "/images/eladissesimnopedidodenamoro.jpg", date: "06 · 06 · 2026", caption: "Ela disse sim", emoji: "❤️" },
+  { id: "g6", src: "/images/aliancas.jpg", date: "06 · 06 · 2026", caption: "Nossas alianças", emoji: "💍" },
+  { id: "g7", src: "/images/fotofossanossa.jpg", date: "sempre", caption: "A nossa foto", emoji: "✨" },
 ];
 
 function Index() {
