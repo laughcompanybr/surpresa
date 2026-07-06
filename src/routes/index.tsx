@@ -8,13 +8,13 @@ import { ChatSim } from "@/components/ChatSim";
 import { Envelope } from "@/components/Envelope";
 import { SurpriseButton } from "@/components/SurpriseButton";
 import { Gallery, PhotoFrame, type PhotoSlot } from "@/components/Gallery";
-import primeiraConversa from "@/images/primeiraconversa.jpg";
-import primeiroEncontro from "@/images/primeiroencontro.jpg";
-import primeiraVezCasa from "@/images/primeiraveznacasadela.jpg";
-import antesPedido from "@/images/algumashorasantesdopedidodenamoro.jpg";
-import elaDisseSim from "@/images/eladissesimnopedidodenamoro.jpg";
-import aliancas from "@/images/aliancas.jpg";
-import fotoFossaNossa from "@/images/fotofossanossa.jpg";
+const primeiraConversa = "/images/primeiraconversa.jpg";
+const primeiroEncontro = "/images/primeiroencontro.jpg";
+const primeiraVezCasa = "/images/primeiraveznacasadela.jpg";
+const antesPedido = "/images/algumashorasantesdopedidodenamoro.jpg";
+const elaDisseSim = "/images/eladissesimnopedidodenamoro.jpg";
+const aliancas = "/images/aliancas.jpg";
+const fotoFossaNossa = "/images/fotofossanossa.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
