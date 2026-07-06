@@ -214,9 +214,15 @@ function Timeline() {
   return (
     <section className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionHeader chapter="03" eyebrow="Nossa história" title="Do primeiro ‘oi’ ao primeiro mês" />
+        <SectionHeader
+          chapter="03"
+          eyebrow="Nossa história"
+          title="Do primeiro ‘oi’ ao primeiro mês"
+        />
 
         <div className="mt-24 space-y-32">
+
+          {/* I */}
           <ChapterSpread
             number="I"
             date="15 · 01 · 2026"
@@ -237,12 +243,20 @@ function Timeline() {
             text={
               <div className="space-y-6">
                 <p className="eyebrow">Primeiro print</p>
+
                 <div className="max-w-[240px] mx-auto md:mx-0">
                   <PhotoFrame
-                    slot={{ id: "print", src: primeiraconversa.jpg, date: "15/01/2026", caption: "Primeira conversa", emoji: "💬" }}
+                    slot={{
+                      id: "print",
+                      src: "/images/primeiraconversa.jpg",
+                      date: "15/01/2026",
+                      caption: "Primeira conversa",
+                      emoji: "💬"
+                    }}
                     aspect="aspect-[9/16]"
                   />
                 </div>
+
                 <p className="text-lavender/80 leading-relaxed">
                   Foi aqui que tudo começou de verdade. Um simples print que hoje significa uma das
                   coisas mais importantes da minha vida.
@@ -251,13 +265,22 @@ function Timeline() {
             }
           />
 
+          {/* II */}
           <ChapterSpread
             number="II"
             date="25 · 04 · 2026"
             title="Nosso primeiro encontro"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "encontro", src: primeiroencontro.jpg, date: "25/04/2026", caption: "Primeiro encontro", emoji: "🌅" }} />
+                <PhotoFrame
+                  slot={{
+                    id: "encontro",
+                    src: "/images/primeiroencontro.jpg",
+                    date: "25/04/2026",
+                    caption: "Primeiro encontro",
+                    emoji: "🌅"
+                  }}
+                />
               </div>
             }
             text={
@@ -271,7 +294,7 @@ function Timeline() {
             }
           />
 
-
+          {/* III */}
           <ChapterSpread
             reverse
             number="III"
@@ -279,7 +302,15 @@ function Timeline() {
             title="Um dos dias mais importantes"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "casa", src: primeiraveznacasadela.jpg, date: "23/05/2026", caption: "Primeira vez na casa dela", emoji: "🏡" }} />
+                <PhotoFrame
+                  slot={{
+                    id: "casa",
+                    src: "/images/primeiraveznacasadela.jpg",
+                    date: "23/05/2026",
+                    caption: "Primeira vez na casa dela",
+                    emoji: "🏡"
+                  }}
+                />
               </div>
             }
             text={
@@ -293,19 +324,29 @@ function Timeline() {
             }
           />
 
+          {/* IV */}
           <FeatureChapter
             number="IV"
             date="06 · 06 · 2026"
             title="O dia em que tudo mudou"
           />
 
+          {/* V */}
           <ChapterSpread
             number="V"
             date="06 · 07 · 2026"
             title="1 mês de nós"
             image={
               <div className="max-w-[280px] mx-auto md:max-w-none">
-                <PhotoFrame slot={{ id: "ummes", src: aliancas.jpg, date: "06/07/2026", caption: "As nossas alianças", emoji: "💍" }} />
+                <PhotoFrame
+                  slot={{
+                    id: "ummes",
+                    src: "/images/aliancas.jpg",
+                    date: "06/07/2026",
+                    caption: "As nossas alianças",
+                    emoji: "💍"
+                  }}
+                />
               </div>
             }
             text={
